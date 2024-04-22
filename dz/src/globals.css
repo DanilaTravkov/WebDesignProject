@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Oswald";
+}
+
+.background-with-overlay {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../src/assets/Netsky_purple_3_Liquicity_Festival_2015.jpg');
+    background-size: contain;
+    background-position: center;
+  }
+  
+  .background-with-overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0, 0, 0, 1) 20%, rgba(0, 0, 0, 0.415) 100%);
+  }
