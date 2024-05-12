@@ -13,7 +13,7 @@ export function Fest() {
     }, []);
 
     return (
-        <div className="relative flex flex-col items-center justify-center z-20 text-white">
+        <div className="relative flex flex-col items-center justify-center  z-20 text-white">
             <p className="text-4xl mb-10">Festival page</p>
             <div className="text-xl">
                 {data && (

@@ -1,8 +1,11 @@
 import React from "react";
 
 export function Admin() {
+
+    const isAuth = false;
+
     return (
-        <div className="px-8 py-6 text-white relative z-20">
+        <div className="flex flex-col items-center justify-center px-8 py-6 text-white relative z-20">
             <h1 className="text-3xl font-semibold mb-6 pb-2 border-b">Admin Page</h1>
             <div className="grid grid-cols-2 gap-6">
                 <div>
